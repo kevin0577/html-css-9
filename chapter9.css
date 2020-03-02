@@ -22,20 +22,12 @@ main{
 }
 
 .image1{
-	width: 280px;
 	height: 150px;
 	background-image: url(img/flow01.png);
 	background-size: cover;
 	background-position: bottom;
 }
-.category{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #FF9A4B;
-	color: #fff;
-	padding: 3px;
-}
+
 .box2{
 	width: 300px;
 	padding: 10px;
@@ -45,20 +37,12 @@ main{
 	float: left;
 }
 .image2{
-	width: 280px;
 	height: 150px;
 	background-image: url(img/flow02.png);
 	background-size: cover;
 	background-position: bottom;
 }
-.category{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #FF9A4B;
-	color: #fff;
-	padding: 3px;
-}
+
 .box3{
 	width: 300px;
 	padding: 10px;
@@ -68,13 +52,13 @@ main{
 	float: left;
 }
 .image3{
-	width: 280px;
 	height: 150px;
 	background-image: url(img/flow03.png);
 	background-size: cover;
 	background-position: bottom;
 }
-.category{
+
+.step {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -82,6 +66,7 @@ main{
 	color: #fff;
 	padding: 3px;
 }
+
 .box1:last-child{
   margin-right: 0;
 }
@@ -96,32 +81,28 @@ main{
 	margin: 15px 0 5px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px) {
 	main{
-		width: 58%;
+		width: 100%;
 		margin: 50px auto;
 	}
-
 	.box1{
-		width: 90%;
 		float: none;
-	}
-	.image1{
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.box2{
 		float: none;
 		width: 90%;
-		margin: 20px 0;
-	}
-	.image2{
-		width: 100%;
+		margin: 20px auto;
 	}
 	.box3{
 		float: none;
 		width: 90%;
+		margin: 0 auto;
 	}
-	.image3{
-		width: 100%;
-	}
+	.box3:last-child{
+  		margin: 0 auto;
+}
+
 }
